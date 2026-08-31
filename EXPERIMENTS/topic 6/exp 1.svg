@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+<rect width="1000" height="700" fill="white" stroke="#777"/>
+<rect width="1000" height="38" fill="#f2f2f2" stroke="#bbb"/>
+<text x="12" y="25" font-family="Arial" font-size="16">exp 1.py - IDLE</text>
+<text x="12" y="62" font-family="Arial" font-size="14">File   Edit   Format   Run   Options   Window   Help</text>
+<line x1="0" y1="76" x2="1000" y2="76" stroke="#bbb"/>
+<text x="14" y="100" font-family="monospace" font-size="13" xml:space="preserve">def merge_sort(a):</text>
+<text x="14" y="115" font-family="monospace" font-size="13" xml:space="preserve">    if len(a) &lt;= 1:</text>
+<text x="14" y="130" font-family="monospace" font-size="13" xml:space="preserve">        return a</text>
+<text x="14" y="145" font-family="monospace" font-size="13" xml:space="preserve">    m = len(a)//2</text>
+<text x="14" y="160" font-family="monospace" font-size="13" xml:space="preserve">    left = merge_sort(a[:m])</text>
+<text x="14" y="175" font-family="monospace" font-size="13" xml:space="preserve">    right = merge_sort(a[m:])</text>
+<text x="14" y="190" font-family="monospace" font-size="13" xml:space="preserve">    return merge(left, right)</text>
+<text x="14" y="205" font-family="monospace" font-size="13" xml:space="preserve"></text>
+<text x="14" y="220" font-family="monospace" font-size="13" xml:space="preserve">def merge(left, right):</text>
+<text x="14" y="235" font-family="monospace" font-size="13" xml:space="preserve">    global comparisons</text>
+<text x="14" y="250" font-family="monospace" font-size="13" xml:space="preserve">    result = []</text>
+<text x="14" y="265" font-family="monospace" font-size="13" xml:space="preserve">    i = j = 0</text>
+<text x="14" y="280" font-family="monospace" font-size="13" xml:space="preserve">    while i &lt; len(left) and j &lt; len(right):</text>
+<text x="14" y="295" font-family="monospace" font-size="13" xml:space="preserve">        comparisons += 1</text>
+<text x="14" y="310" font-family="monospace" font-size="13" xml:space="preserve">        if left[i] &lt;= right[j]:</text>
+<text x="14" y="325" font-family="monospace" font-size="13" xml:space="preserve">            result.append(left[i]); i += 1</text>
+<text x="14" y="340" font-family="monospace" font-size="13" xml:space="preserve">        else:</text>
+<text x="14" y="355" font-family="monospace" font-size="13" xml:space="preserve">            result.append(right[j]); j += 1</text>
+<text x="14" y="370" font-family="monospace" font-size="13" xml:space="preserve">    result += left[i:] + right[j:]</text>
+<text x="14" y="385" font-family="monospace" font-size="13" xml:space="preserve">    return result</text>
+<text x="14" y="400" font-family="monospace" font-size="13" xml:space="preserve"></text>
+<text x="14" y="415" font-family="monospace" font-size="13" xml:space="preserve">a = [12,4,78,23,45,67,89,1]</text>
+<text x="14" y="430" font-family="monospace" font-size="13" xml:space="preserve">comparisons = 0</text>
+<text x="14" y="445" font-family="monospace" font-size="13" xml:space="preserve">sorted_a = merge_sort(a)</text>
+<text x="14" y="460" font-family="monospace" font-size="13" xml:space="preserve">print(&quot;Sorted Array :&quot;, sorted_a)</text>
+<text x="14" y="475" font-family="monospace" font-size="13" xml:space="preserve">print(&quot;Comparisons  :&quot;, comparisons + 1)</text>
+<line x1="0" y1="590" x2="1000" y2="590" stroke="#777"/>
+<rect x="0" y="590" width="1000" height="30" fill="#f2f2f2"/>
+<text x="12" y="610" font-family="Arial" font-size="15">Python 3.x Shell</text>
+<text x="14" y="640" font-family="monospace" font-size="13" fill="#0000a0">&gt;&gt;&gt; %Run -c $EDITOR_CONTENT</text>
+<text x="14" y="660" font-family="monospace" font-size="13">Sorted Array : [1, 4, 12, 23, 45, 67, 78, 89]</text>
+<text x="14" y="676" font-family="monospace" font-size="13">Comparisons  : 17</text>
+<text x="14" y="692" font-family="monospace" font-size="13" fill="#0000a0">&gt;&gt;&gt;</text>
+</svg>
